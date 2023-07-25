@@ -1,0 +1,16 @@
+env:
+  name: "Ant-v4"
+  num_envs: 15
+  b_lim: 20
+  rew_type: "submodular" # "modular"
+
+algo:
+  num_episode: 20001
+  actor_lr: 1.0e-2
+  critic_lr: 1.0e-2
+  batch_size: 8
+  ent_coeff: 1.0e-2
+  recurrent: False
+
+visu:
+  wb: "online" #{'offline', 'online', 'run', 'dryrun', 'disabled'}

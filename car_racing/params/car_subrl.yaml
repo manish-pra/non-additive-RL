@@ -1,0 +1,15 @@
+algo:
+  num_episode: 10001
+  actor_lr: 1.0e-2
+  critic_lr: 1.0e-2
+  batch_size: 8
+  ent_coeff: 1.0e-2
+  recurrent: True
+
+env:
+  state_dim: 5
+  action_dim: 2
+  rew_type: submodular
+
+visu:
+  wb: "online" #{'offline', 'online', 'run', 'dryrun', 'disabled'}

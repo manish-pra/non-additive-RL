@@ -1,6 +1,6 @@
-# Non-additive Reinforcement Learning
+# Submodular Reinforcement Learning (SubRL)
 
-The repository contains all code and experiments for submodular policy optimization (SubPO).
+The repository contains all code and experiments for submodular policy optimization (SubPO). Currently algorithm/experiments are focused to optimize Non-additive rewards modelled using monotone submodular function. However, the algorithm is general and can be used with any monotone non-Additive reward functions. 
 
 ## Dependencies
 1. The code is tested on Python 3.8.5 and 3.8.10
@@ -15,7 +15,7 @@ env_load_path = workspace + \
     "/environments/" + params["env"]["node_weight"]+ "/env_" + \
     str(args.env)
 ```
-args.env is environment number, params["env"]["node_weight"] takes a value from $\{ "constant", "constant", "linear", "bimodal", "gp", "entropy", "steiner_covering"\}$. It loads the appropriate environment.
+args.env is environment number, params["env"]["node_weight"] takes a value from $\{ "constant", "constant", "linear", "bimodal", "gp", "entropy", "steiner\_covering"\}$. It loads the appropriate environment.
 
 2. The following commands run the experiments:
 
